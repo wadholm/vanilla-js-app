@@ -1,0 +1,150 @@
+html {
+    height:100%;
+}
+
+body {
+    font-family: sans-serif, arial, helvetica;
+    margin: 0;
+    background-color: #F8F8FF;
+    color: #020b2f;
+    width: 80%;
+    margin: auto;
+}
+
+.bg {
+    background-image: linear-gradient(-60deg, #F8F8FF 50%, #718AF4 50%);
+    bottom:0;
+    left:-20%;
+    opacity:.5;
+    position:fixed;
+    right:20%;
+    top:0;
+    z-index:-1;
+}
+
+.article-container {
+    display: grid;
+    gap: 0 4%;
+    padding-top: 10%;
+}
+
+.article-div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px #718AF4;
+}
+
+a:link {
+    color: #0e1947;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: #0e1947;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: #718AF4;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .img-div {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .img-tag {
+    color: #979BCD;
+    text-align: right;
+    font-size: smaller;
+    margin-top: 0.2rem;
+  }
+
+  .img-tag a {
+    color: #979BCD;
+  }
+
+
+
+#numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding-top: 1%;
+}
+
+.number-box {
+z-index: 5;
+width: 100%;
+min-height: 10em;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+position: relative;
+background: #979BCD;
+overflow: hidden;
+}
+
+.number-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #7883BE80;
+}
+
+.number-fact {
+    position: relative;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    color: #F8F8FF;
+    padding: 20px;
+
+}
+
+.number {
+    z-index: 6;
+    font-family: Arial;
+    font-size: 120px;
+    color: #7883BE80;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+footer {
+    min-height: 3em;
+}
+
+@media (max-width: 767px) {
+    .article-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .article-div {
+        grid-column: span 1;
+    }
+
+    .img-div {
+        grid-column: span 1;
+    }
+
+    #numbers-container {
+        padding: 1em 1.4em;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    div {
+        grid-column: span 1;
+    }
+}

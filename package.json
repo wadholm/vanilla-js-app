@@ -1,0 +1,16 @@
+{
+  "name": "vanilla-js-app",
+  "version": "1.0.0",
+  "description": "vanilla js app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lint": "eslint ."
+  },
+  "author": "Malin Wadholm",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
+}
